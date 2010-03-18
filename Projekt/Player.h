@@ -1,12 +1,15 @@
+#include <allegro.h>
+#include "Character.h"
 
+#ifndef PLAYER_H
+#define PLAYER_H
 
-
-class Player {
+class Player : public Character {
 public:
-	void draw();
-	int getX();
-	int getY();
+	Player();
+	~Player();
+	BITMAP* generateBitmap(); // DEPRECATED
 private:
-	int _x;
-	int _y;
 };
+
+#endif

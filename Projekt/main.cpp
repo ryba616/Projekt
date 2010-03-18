@@ -1,10 +1,12 @@
 #include <allegro.h>
+#include "Window.h"
 
 
 int main()
 {
-	allegro_init();
-	allegro_exit();
+	Window w;
+	w.drawWindow();
+
 	return 0;
 }
 
