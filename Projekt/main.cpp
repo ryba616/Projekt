@@ -5,6 +5,7 @@ int main()
 {
 	allegro_init();
 	allegro_exit();
+
 	return 0;
 }
 
