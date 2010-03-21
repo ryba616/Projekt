@@ -11,7 +11,7 @@ public:
 	void setX(int nX);
 	void setY(int nY);
 	void setGFX(char *gfxPath, int w, int h);
-	void draw();
+	BITMAP* getGFX();
 
 protected:
 	BITMAP *gfx;

@@ -7,8 +7,6 @@
 class Player : public Character {
 public:
 	Player();
-	~Player();
-	BITMAP* generateBitmap(); // DEPRECATED
 private:
 };
 

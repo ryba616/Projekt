@@ -20,10 +20,9 @@ void Character::setY(int nY)
 void Character::setGFX(char *gfxPath, int w, int h)
 {
 	gfx = create_bitmap(w, h);
-	//clear_to_color(bmp, makecol(255, 0, 0));
 	gfx = load_bmp(gfxPath, default_palette);
 }
-void Character::draw()
+BITMAP* Character::getGFX()
 {
-	masked_blit(gfx, screen, 0, 0, x, y, gfx->w, gfx->h);
+	return gfx;
 }
