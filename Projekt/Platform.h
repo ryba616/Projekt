@@ -10,7 +10,10 @@ class Platform {
 public:
 	Platform(int _x, int _y, int _w, int _h);
 	setBitmap(char *bgPath);
-
+	int getX(){return x;}
+	int getY(){return y;}
+	int getW(){return w;}
+	int getH(){return h;}
 };
 
 #endif
