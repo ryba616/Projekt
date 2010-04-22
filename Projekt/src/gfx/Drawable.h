@@ -2,7 +2,6 @@
 #define DRAWABLE_H
 
 #include <allegro.h>
-#include <string>
 
 
 class Drawable
@@ -14,7 +13,7 @@ public:
 private:
 	BITMAP **parent;
 	BITMAP *me;
-	std::string imgPath;
+	char *imgPath;
 	int x;
 	int y;
 	int w;
