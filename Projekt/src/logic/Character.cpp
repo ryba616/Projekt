@@ -2,24 +2,9 @@
 #include "Character.h"
 
 int Character::getX() { return x; }
-int Character::getY()
-{
-	return y;
-}
-void Character::setX(int nX)
-{
-	x = nX;
-}
-void Character::setY(int nY)
-{
-	y = nY;
-}
-void Character::setGFX(char *gfxPath, int w, int h)
-{
-	gfx = create_bitmap(w, h);
-	gfx = load_bmp(gfxPath, default_palette);
-}
-BITMAP* Character::getGFX()
-{
-	return gfx;
-}
+int Character::getY() { return y; }
+char* Character::getGfxPath() { return gfxPath; }
+
+void Character::setX(int _x) { x = _x; }
+void Character::setY(int _y) { y = _y; }
+void Character::setGfxPath(char *_gfxPath) { gfxPath = _gfxPath; }

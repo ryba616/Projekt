@@ -4,6 +4,7 @@
 
 std::vector<Platform> Map::getPlatforms() { return platforms; }
 
+void Map::setMapPath(char *_path) { mapPath = _path; }
 void Map::addPlatform(Platform _platform) { platforms.push_back(_platform); }
 
 void Map::loadPlatforms()
@@ -14,8 +15,3 @@ void Map::loadPlatforms()
 		tworzy dla kazdej wczytanej platformy instancje klasy Platform zgodnie z wczytanymi danymi
 	*/
 }
-
-
-Map::Map(char *_mapPath) :
-	mapPath(_mapPath)
-{}

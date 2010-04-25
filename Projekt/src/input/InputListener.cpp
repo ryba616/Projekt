@@ -4,17 +4,23 @@
 
 void InputListener::run()
 {
+	// resetowanie informacji na temat stanu klawiszy
+	LEFT = false;
+	RIGHT = false;
+	ESC = false;
+
+	// wywolanie listenerow dla klawiszy
+	walkListener();
+	interfaceListener();
 }
 
-int InputListener::walkListener()
+void InputListener::walkListener()
 {
-	if(key[KEY_LEFT]) return -1;
-	if(key[KEY_RIGHT]) return 1;
-	return 0;
+	if(key[KEY_LEFT]) LEFT = true;
+	if(key[KEY_RIGHT]) RIGHT = true;
 }
 
-
-InputListener::InputListener(Player *player) :
-	p(player)
+void InputListener::interfaceListener()
 {
+	if (key[KEY_ESC]) ESC = true;
 }

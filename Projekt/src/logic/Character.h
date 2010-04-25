@@ -1,20 +1,21 @@
-#include <allegro.h>
-
 #ifndef CHARACTER_H
 #define CHARACTER_H
+
+#include <allegro.h>
+
 
 class Character
 {
 public:
 	int getX();
 	int getY();
-	void setX(int nX);
-	void setY(int nY);
-	void setGFX(char *gfxPath, int w, int h);
-	BITMAP* getGFX();
+	char* getGfxPath();
+	void setX(int _x);
+	void setY(int _y);
+	void setGfxPath(char *_gfxPath);
 
 protected:
-	BITMAP *gfx;
+	char *gfxPath;
 	int x;
 	int y;
 	

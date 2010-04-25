@@ -7,7 +7,7 @@
 class Map
 {
 public:
-	Map(char *_mapPath);
+	void setMapPath(char *_mapPath);
 	void loadPlatforms();
 	std::vector<Platform> getPlatforms();
 	void addPlatform(Platform _platform);

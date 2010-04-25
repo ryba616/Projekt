@@ -1,6 +1,7 @@
 #include <allegro.h>
 #include "gfx/Graphics.h"
 #include "logic/Player.h"
+#include "Game.h"
 
 int main()
 {
@@ -9,6 +10,9 @@ int main()
 	install_keyboard();
 	install_mouse();
 
+
+	Game game;
+	game.run();
 
 
 	allegro_exit();

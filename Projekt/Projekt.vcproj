@@ -203,6 +203,10 @@
 					RelativePath=".\src\logic\Player.cpp"
 					>
 				</File>
+				<File
+					RelativePath=".\src\logic\PlayerPhysics.cpp"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="gfx"
@@ -221,6 +225,14 @@
 				>
 				<File
 					RelativePath=".\src\input\InputListener.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="common"
+				>
+				<File
+					RelativePath=".\src\common\Vecf.cpp"
 					>
 				</File>
 			</Filter>
@@ -257,6 +269,10 @@
 					RelativePath=".\src\logic\Player.h"
 					>
 				</File>
+				<File
+					RelativePath=".\src\logic\PlayerPhysics.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="gfx"
@@ -275,6 +291,14 @@
 				>
 				<File
 					RelativePath=".\src\input\InputListener.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="common"
+				>
+				<File
+					RelativePath=".\src\common\Vecf.h"
 					>
 				</File>
 			</Filter>
@@ -297,14 +321,6 @@
 				>
 			</File>
 		</Filter>
-		<File
-			RelativePath=".\ClassDiagram1.cd"
-			>
-		</File>
-		<File
-			RelativePath=".\ClassDiagram2.cd"
-			>
-		</File>
 		<File
 			RelativePath=".\README.txt"
 			>

@@ -11,7 +11,6 @@
 class Graphics
 {
 public:
-	Graphics();
 	void init(); // inicjuje (tworzy) okno gry
 	void drawWindow(); // rysuje okno gry
 	void loadMapDatas(Map *map); // zapisuje w pola dane potrzebne do rysowania elementów mapy pobrane z instancji klasy Map

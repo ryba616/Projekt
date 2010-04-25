@@ -9,7 +9,6 @@ class Drawable
 public:
 	void draw();
 
-
 private:
 	BITMAP **parent;
 	BITMAP *me;
@@ -18,7 +17,6 @@ private:
 	int y;
 	int w;
 	int h;
-
 
 };
 
