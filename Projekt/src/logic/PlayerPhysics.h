@@ -1,20 +1,23 @@
 #ifndef PLAYERPHYSICS_H
 #define PLAYERPHYSICS_H
 
-#include "../common/Vecf.h"
+#include "../common/Vec.h"
 #include "../logic/Player.h"
+#include "../logic/PlayerPhysics.h"
+#include "../input/InputListener.h"
 
 class PlayerPhysics
 {
 public:
 	void move();
-	void setPlayer(Player *p);
+	void setPlayer(Player *_p);
+	void setInput(InputListener *_input);
 
 private:
 	void update();
 	Player *p;
-	Vecf moveVector;
-
+	Vec moveVector;
+	InputListener *input;
 
 };
 

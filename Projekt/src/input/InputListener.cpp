@@ -24,3 +24,9 @@ void InputListener::interfaceListener()
 {
 	if (key[KEY_ESC]) ESC = true;
 }
+
+InputListener::InputListener() :
+	ESC(false),
+	LEFT(false),
+	RIGHT(false)
+{}

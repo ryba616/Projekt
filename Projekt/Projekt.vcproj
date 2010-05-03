@@ -232,7 +232,7 @@
 				Name="common"
 				>
 				<File
-					RelativePath=".\src\common\Vecf.cpp"
+					RelativePath=".\src\common\Vec.cpp"
 					>
 				</File>
 			</Filter>
@@ -298,7 +298,7 @@
 				Name="common"
 				>
 				<File
-					RelativePath=".\src\common\Vecf.h"
+					RelativePath=".\src\common\Vec.h"
 					>
 				</File>
 			</Filter>

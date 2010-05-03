@@ -3,22 +3,28 @@
 
 #include <vector>
 #include "Platform.h"
+#include <string>
 
 class Map
 {
 public:
-	void setMapPath(char *_mapPath);
+	void setMapPath(std::string _mapPath);
 	void loadPlatforms();
 	std::vector<Platform> getPlatforms();
 	void addPlatform(Platform _platform);
+	void loadInfo();
+
+	std::string getMapPath();
+	std::string getName();
+	std::string getBgPath();
 
 private:
-	char *mapPath;
-	char *name;
+	std::string mapPath;
+	std::string name;
+	std::string bgPath;
 	std::vector<Platform> platforms;
 	BITMAP *map;
 	BITMAP *bg;
-	BITMAP *platform_bg;
 
 };
 

@@ -7,6 +7,7 @@
 class InputListener
 {
 public:
+	InputListener();
 	void run();   //metoda wywolywana w programie i musi spelniac cala funkcje inputlistenera
 
 	bool RIGHT;

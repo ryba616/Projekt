@@ -2,11 +2,11 @@
 #define PLATFORM_H
 
 #include <Allegro.h>
+#include "../common/Vec.h"
 
 
 class Platform {
 public:
-	Platform(int _x, int _y, int _w, int _h);
 	int getX();
 	int getY();
 	int getW();
