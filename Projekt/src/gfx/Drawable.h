@@ -15,8 +15,10 @@ public:
 	void setDestPoint(int _x, int _y);
 	void setSize(int _w, int _h);
 	void setImgPath(std::string _imgPath);
-	void prepare();
+	void prepareNormal();
+	void prepareBackground(int bg_w, int bg_h);
 	BITMAP* getBitmap();
+	void setBasePoint(int _x, int _y);
 
 	
 	int sx; // source
@@ -25,6 +27,8 @@ public:
 	int dy;
 	int w;
 	int h;
+	int bx; // base (bazowe polozenie)
+	int by;
 
 private:
 	BITMAP **parent;

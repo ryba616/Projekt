@@ -21,7 +21,7 @@ void Graphics::drawWindow()
 	blit(buffer, screen, 0, 0, 0, 0, RESOLUTION_WIDTH, RESOLUTION_HEIGHT);
 }
 
-void Graphics::loadMapDatas()
+void Graphics::loadMapData()
 {
 	platforms = map->getPlatforms();
 }
@@ -33,14 +33,27 @@ void Graphics::createElements() // raczej nazwa metody do zmiany
 	bg.setImgPath(map->getBgPath());
 	bg.setSourcePoint(offset.x, offset.y);
 	bg.setSize(RESOLUTION_WIDTH, RESOLUTION_HEIGHT);
-	bg.prepare();
+	bg.prepareNormal();
 
 	// player
 	player.setParent(&buffer);
 	player.setImgPath("./gfx/player.bmp");
 	player.setDestPoint((RESOLUTION_WIDTH/2)-20, (RESOLUTION_HEIGHT/2)-20);
 	player.setSize(40, 40);
-	player.prepare();
+	player.prepareNormal();
+
+	loadMapData();
+	for (unsigned int i = 0; i < platforms.size(); i++)
+	{
+		Drawable p;
+		p.setParent(&buffer);
+		p.setImgPath(platforms[i].getBgPath());
+		p.setSize(platforms[i].getW(), platforms[i].getH());
+		p.setBasePoint(platforms[i].getX(), platforms[i].getY());
+		p.setDestPoint(offset.x, offset.y);
+		p.prepareBackground(10, 10);
+		environment.push_back(p);
+	}
 }
 
 void Graphics::prepareBuffer()
@@ -51,14 +64,17 @@ void Graphics::prepareBuffer()
 	bg.setSourcePoint(offset.x, offset.y);
 	bg.draw();
 
-	// player
-	player.draw();
 
 	// elementy otoczenia
 	for(unsigned int i = 0; i < environment.size(); i++)
 	{
+		environment[i].setDestPoint(environment[i].bx - offset.x, environment[i].by - offset.y);
 		environment[i].draw();
 	}
+
+	
+	// player
+	player.draw();
 }
 
 // TODO

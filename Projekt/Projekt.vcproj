@@ -207,6 +207,22 @@
 					RelativePath=".\src\logic\PlayerPhysics.cpp"
 					>
 				</File>
+				<Filter
+					Name="hitTest"
+					>
+					<File
+						RelativePath=".\src\logic\hitTest\Collision.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\src\logic\hitTest\HitTest.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\src\logic\hitTest\HTObj.cpp"
+						>
+					</File>
+				</Filter>
 			</Filter>
 			<Filter
 				Name="gfx"
@@ -231,10 +247,6 @@
 			<Filter
 				Name="common"
 				>
-				<File
-					RelativePath=".\src\common\Vec.cpp"
-					>
-				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -273,6 +285,22 @@
 					RelativePath=".\src\logic\PlayerPhysics.h"
 					>
 				</File>
+				<Filter
+					Name="hitTest"
+					>
+					<File
+						RelativePath=".\src\logic\hitTest\Collision.h"
+						>
+					</File>
+					<File
+						RelativePath=".\src\logic\hitTest\HitTest.h"
+						>
+					</File>
+					<File
+						RelativePath=".\src\logic\hitTest\HTObj.h"
+						>
+					</File>
+				</Filter>
 			</Filter>
 			<Filter
 				Name="gfx"
@@ -314,6 +342,10 @@
 			</File>
 			<File
 				RelativePath=".\gfx\platform_1_bg.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\maps\default\platforms"
 				>
 			</File>
 			<File

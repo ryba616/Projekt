@@ -18,8 +18,11 @@ public:
 	void setMap(Map *_m); // zapisuje wskaznik na instancje mapy
 	void createElements(); // tworzy elementy do narysowania
 
+	Vecf offset; // przesuniecie elementow wzgledem gracza
+
+
 private:
-	void loadMapDatas(); // zapisuje w pola dane potrzebne do rysowania elementów mapy pobrane z instancji klasy Map
+	void loadMapData(); // zapisuje w pola dane potrzebne do rysowania elementów mapy pobrane z instancji klasy Map
 	void prepareBuffer(); // rysuje wszystkie elementy (Drawable) na bufor
 	void countOffset(); // oblicza aktualny offset
 
@@ -34,8 +37,7 @@ private:
 	char *bgPath; // sciezka do tla
 	Player *p;
 	Map *map;
-	Vec offset; // przesuniecie elementow wzgledem gracza
-
+	
 	static const int RESOLUTION_WIDTH = 800; // tych stalych nalezy uzyc do okreslania rozdzielczosci okna
 	static const int RESOLUTION_HEIGHT = 600;
 

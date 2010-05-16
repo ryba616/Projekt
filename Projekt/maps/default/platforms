@@ -1,1 +1,5 @@
-10 10 300 80 platform_bg.bmp
+-400 0 400 1000 platform_bg.bmp
+-400 -300 2400 300 platform_bg.bmp
+2000 -300 400 1600 platform_bg.bmp
+0 1000 2000 300 platform_bg.bmp
+

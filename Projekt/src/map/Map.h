@@ -9,11 +9,16 @@ class Map
 {
 public:
 	void setMapPath(std::string _mapPath);
+	void loadInfo();
+
+	// metody zwiazane z platformami
 	void loadPlatforms();
 	std::vector<Platform> getPlatforms();
 	void addPlatform(Platform _platform);
-	void loadInfo();
+	int platformCount();
+	Platform *getPlatform(int p_id);
 
+	// metody zwiazane z informacjami o samej mapie
 	std::string getMapPath();
 	std::string getName();
 	std::string getBgPath();

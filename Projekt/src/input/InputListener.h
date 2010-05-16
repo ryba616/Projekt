@@ -12,12 +12,16 @@ public:
 
 	bool RIGHT;
 	bool LEFT;
+	bool JUMP;
 	bool ESC;
 
 private:
-	void walkListener();  // sprawdza czy postac rusza sie na boki, zwraca: -1 lewo, 1 prawo, 0 brak
+	void walkListener();  // ustawia pola RIGHT i LEFT - ruch na boki
+	void jumpListener(); // ustawia pole JUMP - skakanie
 	void interfaceListener(); // ta metoda ma nasluchiwac klawiszy zwiazanych z interfejsem, obecnie jest to tylko klawisz ESC
 
+	// pola pomocnicze
+	bool m_isJumpPressed;
 };
 
 #endif

@@ -6,6 +6,7 @@
 #include "gfx/Graphics.h"
 #include "input/InputListener.h"
 #include "map/Map.h"
+#include "logic/hitTest/HitTest.h"
 
 
 class Game
@@ -20,6 +21,7 @@ private:
 	InputListener input;
 	Map map;
 	PlayerPhysics physics;
+	HitTest ht;
 
 };
 
